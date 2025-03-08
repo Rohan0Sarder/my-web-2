@@ -16,6 +16,19 @@
   font-weight: 400;
   font-style: normal;
 }
+@keyframes typing {
+    from { max-width: 0; }
+    to { max-width: 100%; }
+}
+
+#name-title {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    /* width: 0; */
+    animation: typing 3s steps(10) infinite;
+}
 
 </style>
 </head>
@@ -40,19 +53,16 @@
         </nav>
         
     
-    
         <section class=" ml-2 sm:ml-24 mb-32 mt-32 justify-between flex">
-            <div>
-                <h1 class="text-4xl  sm:text-8xl font-extrabold">Hello<br>I'm Rohan</h1>
+            <div class=" ">
+                <h1 class="text-4xl  sm:text-8xl font-extrabold ">Hello<br>
+                    <span class=""> I'm <span id="name-title"> Rohan</span></span></h1>
                 <p class="mt-4"> I'm a Web Developer. <br>I develop websites using HTML, CSS, and JavaScript."</p>
             </div>
-            <img class=" h-[200px] sm:h-[400px] justify-end border-4 rounded-s-full  " src="./my pic.jpg" alt="">
+            <img class=" h-[200px] sm:h-[400px] justify-end border-4 rounded-s-full " src="./my pic.jpg" alt="">
         </section>
 
-    
-   
-    
-   
+
         <section class="bg-neutral py-20">
             <div class="flex flex-col sm:flex-row justify-between  mx-4 sm:mx-24">
                 <div class="flex flex-col md:flex-row gap-10">
@@ -80,6 +90,6 @@
              </div>
         </section>
     
-    
+   
 </body>
 </html>
