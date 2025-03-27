@@ -29,14 +29,38 @@
     max-width: 0;
     animation: typing 3s steps(100) infinite;
 }
+#nav-icon{
+    position: fixed;
+    top:0;
+    z-index: 1000;
+}
 
 </style>
 </head>
 
-<body class="bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] gap-32  bg-[url('./my pic.jpg')]">
+<body class=" bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD]  bg-[url('./my pic.jpg')]">
    
-        
-        <nav class="flex pt-4 text-3xl mx-3 sm:mx-24 font-bold justify-between  items-center">
+   
+      <main class="">
+
+
+        <nav id="nav-icon" class=" bg-[#d5c8a0] shadow-md justify-between w-full p-4 flex">
+            <div class="font-bold justify-between text-center items-center sm:text-3xl text-2xl">
+                <h1 class="gap-2"><i class="fa-brands fa-slack animate-spin"></i>ROH<span class=" text-red-600 animate-pulse">@</span>N</h1>
+            </div>
+
+            <div  class="text-2xl flex gap-4 sm:text-3xl " >
+                <i id="home" class="fa-solid fa-house"></i>
+                  
+                <a href="https://github.com/Rohan0Sarder" target="_blank"><i class="fa-brands fa-github "></i></a>
+                <a href="https://www.facebook.com/rohan.sarder.601916" target="_blank"><i class="fa-brands fa-facebook "></i></a>
+                <a href="https://wa.me/8801772977542" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
+                <a href="https://t.me/mrx404" target="_blank"><i class="fa-brands fa-telegram "></i></a>
+               
+               </div> 
+        </nav>
+          
+        <!-- <nav id="nav-header" class=" bg-lime-500 nav-head  w-full mx-auto text-3xl  sm:mx-24 font-bold justify-between  items-center">
             <div>
                 <h1 class="gap-2"><i class="fa-brands fa-slack animate-spin"></i>ROH<span class=" text-red-600 animate-pulse">@</span>N</h1>
             </div>
@@ -50,17 +74,18 @@
                 </ul>
               </details>
             </div>
-        </nav>
+        </nav> -->
         
     
-        <section class=" ml-2 sm:ml-24 mb-32 mt-32 justify-between flex">
-            <div class=" ">
+        <section class=" ml-2 sm:ml-24 mb-32 pt-28 justify-between flex">
+            <div class=" font-semibold ">
                 <h1 class="text-4xl  sm:text-8xl font-extrabold ">Hello<br>
                      <span id="name-title">I'm Rohan</span></h1>
                 <p class="mt-4"> I'm a Web Developer. <br>I develop websites using HTML, CSS, and JavaScript."</p>
             </div>
             <img class=" h-[200px] sm:h-[400px] justify-end border-4 rounded-s-full " src="./my pic.jpg" alt="">
         </section>
+      </main>
 
 
         <section class="bg-neutral py-20">
@@ -90,6 +115,6 @@
              </div>
         </section>
     
-   
+   <script src="./script.js"></script>
 </body>
 </html>
